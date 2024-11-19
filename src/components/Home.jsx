@@ -1,6 +1,5 @@
 import { Carousel } from "flowbite-react";
 import React from "react";
-
 import banner1 from "../assets/new-top.jpg";
 import banner2 from "../assets/fast.jpg";
 import banner3 from "../assets/WYP-Trade.jpg";
@@ -80,14 +79,32 @@ export const Home = () => {
         </div>
       </section>
       <div>
-<div className="relative max-w-xl mx-auto mt-20">
-    <img src={allinsureance} className="h-3/4 w-4/4 object-cover rounded-md"  alt="Random image"/>
-    <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
-    <div className="absolute inset-0 flex items-center justify-center">
-        <h2 className="text-white text-3xl font-bold">Find Your Insurances Agent! Say Hello</h2>
-    </div>
-</div>
-</div>
+        <section className="relative mt-20">
+          <div className="relative max-w-screen-lg mx-auto">
+            {/* Background Image */}
+            <img
+              src={allinsureance}
+              alt="Insurance Agent"
+              className="h-[500px] w-full object-cover rounded-lg shadow-lg"
+            />
+            {/* Overlay Content */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-6 px-4 mt-72">
+              <h2 className="text-blue-600 text-4xl font-bold py-2 px-4 rounded-lg bg-white bg-opacity-60">
+                Find Your Insurance Agent!
+              </h2>
+              <p className="text-gray-800 text-lg py-2 px-4 rounded-lg bg-white bg-opacity-60">
+                Say hello to a world of hassle-free insurance policies tailored for you.
+              </p>
+              <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform bg-opacity-60">
+                Connect Now
+              </button>
+            </div>
+          </div>
+        </section>
+
+
+
+      </div>
     </>
   );
 };
